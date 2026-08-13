@@ -521,6 +521,54 @@ section{min-height:100vh;padding:120px 20px}
   color:#22d3ee;
   filter:drop-shadow(0 0 10px rgba(34,211,238,.7));
 }
+.name{
+    color:#00bfff;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+#typing{
+    color:#1579d0;
+    font-size:24px;
+    font-weight:600;
+    border-right:3px solid #111fbd;
+    white-space:nowrap;
+    overflow:hidden;
+    animation: blink .8s infinite;
+}
+
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
+.resume-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(135deg, #00bfff, #2563eb);
+    box-shadow: 0 6px 20px rgba(0, 191, 255, 0.4);
+    transition: all 0.4s ease;
+}
+
+.resume-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 191, 255, 0.6);
+}
+
+.resume-text {
+    margin-top: 12px;
+    color: #d1d5db;
+    font-size: 14px;
+}
 
 
 
@@ -544,16 +592,19 @@ section{min-height:100vh;padding:120px 20px}
     <li><a href="#projects">Projects</a></li>
     <li><a href="#internship">Internship</a></li>
     <li><a href="#contact">Contact</a></li>
+    
+
   </ul>
 </nav>
 
 <!-- HOME -->
 <section id="home">
-  <h1>
-  <i class="fas fa-code"></i>
-  Hi, I'm
-  <span>Sirigineedi Mokshitha Manilakshmi</span>
-</h1>
+  <h1>Hi, I'm</h1>
+<h1 class="name">Sirigineedi Mokshitha Manilakshmi</h1>
+
+<h2>
+  <span id="typing"></span>
+</h2>
 <div class="home-icons reveal">
   <i class="fas fa-laptop-code"></i>
   <i class="fas fa-brain"></i>
@@ -573,7 +624,11 @@ I enjoy transforming real-world problems into scalable solutions using
 AI-driven data-centric, and performance-focused approaches.
 </p>
 
-  <button class="btn" onclick="location.href='#projects'">View My Work</button>
+  <a class="btn"
+   href="https://drive.google.com/file/d/14S-MtXp-IC8PK6Ly7K47T0myj3Za9tAB/view?usp=drive_link"
+   target="_blank">
+   View Resume
+</a>
 </section>
 
 
@@ -657,93 +712,149 @@ AI-driven data-centric, and performance-focused approaches.
     <span><i class="fas fa-sitemap"></i> Data Structures & Algorithms</span>
     <span><i class="fas fa-brain"></i> Machine Learning</span>
   </div>
+  
 </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <h2 class="section-title reveal">My <span>Projects</span></h2>
-  <p class="section-sub reveal">Selected academic & real-world work</p>
+  <h2 class="section-title reveal">
+    My <span>Projects</span>
+  </h2>
 
-  <!-- FIRST ROW (2 CARDS) -->
+  <p class="section-sub reveal">
+    Selected academic & real-world work
+  </p>
+
   <div class="container project-grid">
 
     <!-- RETURNSHIELD AI -->
-<div class="card reveal">
-  <div class="header" style="background:linear-gradient(135deg,#d2c9c3,#e31a0c)">
-<i class="fas fa-shopping-bag"></i>
-  </div>
+    <div class="card reveal">
+      <div class="header"
+        style="background:linear-gradient(135deg,#d2c9c3,#e31a0c)">
+        <i class="fas fa-shopping-bag"></i>
+      </div>
 
-  <div class="body">
-    <h3>ReturnShield AI – Product Return Risk Prediction</h3>
+      <div class="body">
+        <h3>ReturnShield AI – Product Return Risk Prediction</h3>
 
-    <p>
-      Built a Machine Learning model using <strong>TF-IDF</strong> and
-      <strong>Random Forest</strong> to predict product return probability
-      with <strong>93% accuracy</strong>, helping identify high-risk product returns.
-    </p>
+        <p>
+          Built a Machine Learning model using
+          <strong>TF-IDF</strong> and
+          <strong>Random Forest</strong>
+          to predict product return probability with
+          <strong>93% accuracy</strong>,
+          helping identify high-risk product returns.
+        </p>
 
-    <div class="tags">
-      <span>Python</span>
-      <span>Machine Learning</span>
-      <span>NLP</span>
-      <span>TF-IDF</span>
-      <span>Random Forest</span>
+        <div class="tags">
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>NLP</span>
+          <span>TF-IDF</span>
+          <span>Random Forest</span>
+        </div>
+
+        <a class="git"
+          href="https://github.com/aiexplorermml/ReturnShield-AI"
+          target="_blank">
+          <i class="fab fa-github"></i>
+          View on GitHub
+        </a>
+      </div>
     </div>
-
-    <a class="git" href="https://github.com/aiexplorermml/ReturnShield-AI" target="_blank">
-      <i class="fab fa-github"></i> View on GitHub
-    </a>
-  </div>
-</div>
-    
 
     <!-- FLIGHTFINDER -->
     <div class="card reveal">
-        <div class="header" style="background:linear-gradient(135deg,#07a4e7,#d2c9c3)">
-
+      <div class="header"
+        style="background:linear-gradient(135deg,#07a4e7,#d2c9c3)">
         <i class="fas fa-plane"></i>
       </div>
+
       <div class="body">
         <h3>FlightFinder</h3>
+
         <p>
           Flight search and booking platform that helps users
           find and compare flights efficiently.
         </p>
+
         <div class="tags">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
           <span>MongoDB</span>
         </div>
-        <a class="git" href="https://github.com/aiexplorermml/FlightFinders-project" target="_blank">
-          <i class="fab fa-github"></i> View on GitHub
+
+        <a class="git"
+          href="https://github.com/aiexplorermml/FlightFinders-project"
+          target="_blank">
+          <i class="fab fa-github"></i>
+          View on GitHub
         </a>
       </div>
     </div>
+
     <!-- DIET CHATBOT -->
-<div class="card reveal">
-  <div class="header" style="background:linear-gradient(135deg,#10b981,#22d3ee)">
-    <i class="fas fa-apple-alt"></i>
-  </div>
-  <div class="body">
-    <h3>Diet Recommendation Chatbot</h3>
-    <p>
-      Developed a GUI-based chatbot that calculates health metrics
-      and suggests customized diet plans based on user inputs.
-    </p>
-    <div class="tags">
-      <span>Python</span>
-      <span>Tkinter</span>
-      <span>Pandas</span>
-      <span>NumPy</span>
+    <div class="card reveal">
+      <div class="header"
+        style="background:linear-gradient(135deg,#10b981,#22d3ee)">
+        <i class="fas fa-apple-alt"></i>
+      </div>
+
+      <div class="body">
+        <h3>Diet Recommendation Chatbot</h3>
+
+        <p>
+          Developed a GUI-based chatbot that calculates
+          health metrics and suggests customized diet plans
+          based on user inputs.
+        </p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>Tkinter</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+        </div>
+        
+      </div>
     </div>
-    
-  </div>
-</div>
+
+    <!-- SELF-HEALING RAG -->
+    <div class="card reveal">
+      <div class="header"
+        style="background:linear-gradient(135deg,#8b5cf6,#2563eb)">
+        <i class="fas fa-shield-virus"></i>
+      </div>
+
+      <div class="body">
+        <h3>Self-Healing RAG – Intelligent Document Q&A System</h3>
+
+        <p>
+          Developed a Self-Healing RAG system using semantic
+          retrieval and an LLM-based critic to validate answers,
+          retry unsupported responses, and reduce hallucinations.
+        </p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>LangChain</span>
+          <span>FAISS</span>
+          <span>Gemini API</span>
+          <span>RAG</span>
+        </div>
+
+        <a class="git"
+          href="https://github.com/aiexplorermml/Self-healing-Rag-System"
+          target="_blank">
+          <i class="fab fa-github"></i>
+          View on GitHub
+        </a>
+      </div>
+    </div>
 
   </div>
-
 </section>
 
 <!-- INTERNSHIP -->
@@ -842,6 +953,46 @@ AI-driven data-centric, and performance-focused approaches.
 </section>
 
 <script>
+const words = [
+    "💻 Software Developer",
+    "🤖 AI & Data Science Enthusiast",
+    "🚀 Full Stack Developer",
+    "🧠 Machine Learning Developer"
+];
+
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type() {
+
+    currentWord = words[i];
+
+    if(!isDeleting){
+        document.getElementById("typing").textContent =
+        currentWord.substring(0,j++);
+
+        if(j > currentWord.length){
+            isDeleting = true;
+            setTimeout(type,1200);
+            return;
+        }
+    }
+    else{
+        document.getElementById("typing").textContent =
+        currentWord.substring(0,j--);
+
+        if(j==0){
+            isDeleting=false;
+            i=(i+1)%words.length;
+        }
+    }
+
+    setTimeout(type,isDeleting?40:90);
+}
+
+type();
 /* ===== SPLASH CONTROL ===== */
 window.addEventListener("load", () => {
   document.body.style.overflow = "hidden";
